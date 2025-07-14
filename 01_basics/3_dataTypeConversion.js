@@ -22,7 +22,7 @@ console.log(typeof scoreInNumber); // and boom we get the value as number
 let anshu = 0       // 1=> true; 0=> false; empty string => false; string => true
 let deepak = Boolean(anshu)
 console.log(deepak);
-console.log(typeof deepak);
-
+console.log(typeof deepak);   // we get boolean type of this number
+// we can also does this with string
 
 //...................Do all this to convert one data type into another............
