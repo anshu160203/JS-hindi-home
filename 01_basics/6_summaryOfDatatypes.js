@@ -40,5 +40,5 @@ const myFunction = function(){ // functions.... all the valus in {} are function
 /* 1)javascript is a dynamicallty types language, because data type will automatically assigned at the time of
    compilation or code execution.
    2)function ka DT function hi hota hai but bola "Object function" jata hai, jitne v non-primitive DT hai
-   unka return type "object" hi aata hai.
+   unka return data type "object" hi aata hai.
 */
