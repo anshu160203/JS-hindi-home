@@ -23,6 +23,3 @@ console.log(typeof age);// number type value
 
 console.log(typeof null);   // object  >>>> null is a object
 console.log(typeof undefined);   // undefined
-
-
-                
