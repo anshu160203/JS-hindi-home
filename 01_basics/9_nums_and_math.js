@@ -63,7 +63,7 @@ console.log(Math.floor(Math.random() * (max - min + 1))+ min)
 
 // math.random *10 >> gives upto 10 and then we add >> min_ >> therefore now the value will be 10-20!
 
-// dice numbers
+// dice number 1 to 6
 const low = 1 
 const high = 6
 console.log(Math.floor(Math.random() * ( high - low + 1)) + low)
