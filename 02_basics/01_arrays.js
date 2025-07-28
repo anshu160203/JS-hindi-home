@@ -38,3 +38,27 @@ const newArr = [ 0,1,2,3,4,5,6,7,8]
 // const spliceArray = newArr.splice(1,3)// include end index and change in original array
 // console.log("splice", spliceArray);
 // console.log("original array", newArr);
+
+
+// adding two arrays
+
+const marvel = [ "Thor","Ironman","Spidey"]
+const dcHeros = ["Aquaman","Batman","Superman"]
+const pokemon = ["Pikachu","Mewto","Charizad"]
+
+// concat only for two array, so we use spread method
+
+const allHeros = [...marvel, ...dcHeros, ...pokemon]
+console.log(allHeros);
+
+let s1 = 10
+let s2 = 20
+let s3 = 30
+
+console.log(Array.of(s1,s2,s3)); // returns a new array from a set of elements. // [10,20,30]
+
+
+let a1 = [1,2]
+let a2 = [3,4]
+let a3 = [5,6]
+console.log(Array.of(a1,a2,a3)); //[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
