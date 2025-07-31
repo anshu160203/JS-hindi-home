@@ -46,4 +46,4 @@ console.log(addTwo(3,5));
 
 
 // obect is always return in {}
-
+// this is only used in object
