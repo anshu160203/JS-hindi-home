@@ -1,6 +1,7 @@
 // iterations are just loops like :- for loop, while, do-while, etc.
 
 // for loop
+
 for (let i = 0; i <= 10; i++) {
     const element = i;
     // console.log(element);
@@ -59,3 +60,31 @@ for (let index = 1; index <= 20; index++) {
     }
     // console.log(index);
 }
+
+
+// while and do while
+// syntax of while
+// while (condition) {
+// }
+
+let index = 0
+while (index <= 20) {
+    // console.log(index);
+    index = index + 2
+}
+
+// while loop in array
+let myArray1 = ["Falsh", "Spiderman","BatMan"];
+let i = 0;
+while (i < myArray.length) {
+    // console.log(myArray[i]);
+    i++;
+}
+
+// do-while... first code is executed and after that condition is checked
+
+let val = 0;
+do {
+    console.log(`value is ${val}`);
+    val ++ ;
+} while (val <= 10);
