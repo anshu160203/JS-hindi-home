@@ -111,3 +111,5 @@ myCoding.forEach((item) => {
     console.log(`name of language is ${item.languageName} and file name is ${item.languageFileName}`);
     // console.log(item.languageFileName);
 })
+
+// forEach never return values
