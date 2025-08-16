@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing images</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    /* Events :- like click, what to do when user gives input
+                 events runs sequentially but also have some exceptions
+        for any funcrion like click there are many ways but the best one is to use eventListner 
+        
+        1. getting the element by id, 2. adding EventListner, 3. adding type of event - click,
+        4. giving a function name and events to do, 5. false is default 
+    */
+
+//    document.getElementById('owl').addEventListener('click', function (e) {
+//             alert('owl clicked');
+//    }, false)
+
+   /*  some more important events
+   timestamp >> time, date, activity etc. type
+        // preventDefault >> preventing the default behaviour of anything
+        // target 
+        // toElement
+        // srcElement
+        // currentTarget
+
+        // clientX
+        // clientY
+        // offset
+        // screenX
+        // screenY
+        // tiltX (position related)
+        // tiltY (position related)
+
+        // altkey, ctrlkey, shiftkey >> (in jaisi specials keys ka bhi access mil jata hai press hui hai ya nahi... through events)
+        // keyCode // keyboars se related events
+
+        **************  EVENT PROPAGATION **************
+
+        Used by 2 methods :- 1. Event bubbling(false)  2. Event capturing(true)
+
+        1. Event bubbling :- most used cause it is present by default,, in this methods goes from bottom to top
+        2. Event capturing :- in this method goes from top to bottom,, means first it gives ul then li
+   */
+//      document.getElementById('images').addEventListener('click', function (e){
+//            alert('clicked inside the ul')
+//    },false)
+//      document.getElementById('prayer').addEventListener('click', function (e) {
+//             alert('prayer clicked');
+//             e.stopPropagation(); // here we stop the bubbling of objects it gives only prayer object
+//    }, false)
+
+//    document.getElementById('google').addEventListener('click', function (e){
+//      e.stopPropagation();
+//     e.preventDefault(); // it will stop us from visiting google site
+//     alert(' The google link is clicked');
+//    }, false)
+
+
+
+// if we want to remove image after clicking
+
+document.querySelector('#images').addEventListener('click', function (e){
+    console.log(e.target.tagName);
+    
+    if (e.target.tagName === 'IMG') {
+        console.log(e.target.id);
+        let removeIt= e.target.parentNode;
+     removeIt.remove()
+    }
+     
+})
+</script>
+</html>   
