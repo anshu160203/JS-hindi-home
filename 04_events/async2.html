@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>Himanshu in javascript </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str , Date.now());
+    }
+    // const intervalID 
+    let interval ;
+    // document.querySelector('#start').addEventListener('click', function (){
+    // interval = setInterval(sayDate , 2000 , 'hi')
+
+    // document.querySelector('#stop').addEventListener('click', function (){
+    //     clearInterval(interval)
+    // })
+    // })
+
+    document.querySelector('#start').addEventListener('click', function (){
+        interval = setInterval(sayDate , 1000 , 'hello')
+    })
+    document.querySelector('#stop').addEventListener('click', function (){
+        clearInterval(interval)
+    })
+    
+    
+</script>
+</html>
