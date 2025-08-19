@@ -5,8 +5,8 @@ class user {
     logMe(){
         console.log(`Username : ${this.username}`);
     }
-
-    createId(){
+    // static prevents form being accessed by all
+    static createId(){
         return`123`
     }
 }
