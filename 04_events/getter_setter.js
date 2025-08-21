@@ -25,6 +25,7 @@ console.log(himanshu.password)
 
 // when above getter and setter were not available
 
+// function based syntax
 function UserOne (email, password){
     this._email = email;
     this._password = password
@@ -49,3 +50,20 @@ function UserOne (email, password){
 
 const cat = new UserOne("hihi@hidh.com", "anshu")
 console.log(cat.password)
+
+// object based syntax
+
+const UserTwo = {
+    _email : 'huah@idsif.com',
+    _password : "himanshu",
+
+    get email(){
+        return this._email.toUpperCase()
+    },
+    set email(value){
+        this._email = value
+    }
+}
+
+const dog = Object.create(UserTwo)
+console.log(dog.email)
