@@ -4,7 +4,7 @@
 function addTwoNo(n1,n2 ){
     console.log( n1 + n2);
 }
-//funcition name, arguments
+//function name, arguments
 addTwoNo(10,20);// here they are numbers :-- 30
 // what if we pass strings?
 addTwoNo("10","20");// 1020
@@ -63,3 +63,14 @@ function printarray(anyarray){
 }
 printarray(arr);
 console.log(printarray(arr));
+
+// we can use anyObject to pass in function
+const user = {
+    name : "Himanshu",
+    id :1002,
+}
+
+function handleObjectTwo(anyobject){
+    console.log(`username is ${anyobject.name} and id is ${anyobject.id}`)
+}
+handleObjectTwo(user)
