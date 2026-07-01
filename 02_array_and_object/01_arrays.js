@@ -36,6 +36,11 @@ const myNewArraySlice = newArr.slice(1,3)// here we gives the index of numbers
 console.log( "slice",myNewArraySlice);// doesn't include end index and no change in original array
 
 const spliceArray = newArr.splice(1,3)// include end index and change in original array
+/* it also add values
+splice(start)-- from here the indexing starts
+splice(start, deleteCount)-- here we gives the starting index and the end index, if the end index 
+will be zero then the there will be no deletion in array
+splice(start, deleteCount, item1)*/
 console.log("splice", spliceArray);
 console.log("original array", newArr);
 
